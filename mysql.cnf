@@ -1,0 +1,6 @@
+[client]
+database = excel_templates
+Host = localhost
+user = root
+password = !dnzlxkfh0520!
+default-character-set = utf8
