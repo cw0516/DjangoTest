@@ -1,0 +1,13 @@
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+/.idea/
+
+_pycache_/
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+Media
+
