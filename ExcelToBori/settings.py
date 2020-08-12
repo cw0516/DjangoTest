@@ -68,6 +68,15 @@ REST_FRAMEWORK = {
     ]
 }
 
+# db 접속 정보는 프로젝트 최상단 경로에 mysql.cnf 파일안에 작성해주세요
+# mysql.cnf 파일 작성법은 아래와 같습니다.
+'''
+[client]
+database = DB명
+host = 데이테베이스 주소(IP)
+user = 데이터베이스 계정
+password = 계정 비밀번호
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -75,12 +84,6 @@ DATABASES = {
         'OPTIONS': {
             'read_default_file': os.path.join(BASE_DIR, 'mysql.cnf')
         }
-
-        # 'NAME': 'DB',
-        # 'USER' : 'USER',
-        # 'PASSWORD' : 'PWD',
-        # 'HOST' : 'HOST',
-        # 'PORT' : PORT
     }
 }
 AUTH_PASSWORD_VALIDATORS = [
